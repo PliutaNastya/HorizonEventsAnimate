@@ -480,8 +480,8 @@ body::after {
   aspect-ratio: 1.5/1
 }
 .forces-challenge__container {
-  -webkit-margin-before: -20%;
-  margin-block-start: -20%;
+  -webkit-margin-before: -10%;
+  margin-block-start: -10%;
   position: relative;
   z-index: 5;
   display: flex;
@@ -571,6 +571,8 @@ body::after {
 .sailing__content {
   flex: 1 0 50%;
   background-color: #fff;
+  -webkit-padding-end: 7.5rem;
+  padding-inline-end: 7.5rem;
   box-shadow: 0 .75rem 1.0938rem 0 rgba(0,0,0,.2)
 }
 .sailing__inner-video {
@@ -585,7 +587,9 @@ body::after {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top
 }
 .sailing__inner-video [poster] {
   width: 100%;
@@ -681,9 +685,7 @@ body::after {
     -webkit-margin-before: -5.5rem;
     margin-block-start: -5.5rem;
     -webkit-margin-end: -6.875rem;
-    margin-inline-end: -6.875rem;
-    -webkit-padding-end: 7.5rem;
-    padding-inline-end: 7.5rem
+    margin-inline-end: -6.875rem
   }
   .pete-palooza__content {
     -webkit-margin-before: -5.5rem;
@@ -852,7 +854,8 @@ body::after {
     padding-block: 4.0625rem
   }
   .sailing__content {
-    padding-inline: 2.8125rem
+    -webkit-padding-start: 2.8125rem;
+    padding-inline-start: 2.8125rem
   }
   .pete-palooza__content {
     padding-block: 3.125rem
@@ -1014,7 +1017,8 @@ body::after {
     padding-block: 1.25rem
   }
   .sailing__content {
-    padding-inline: 1.25rem
+    -webkit-padding-start: 1.25rem;
+    padding-inline-start: 1.25rem
   }
   .pete-palooza__content {
     padding-block: 1.25rem
@@ -1062,6 +1066,12 @@ body::after {
   .contact-us {
     -webkit-padding-before: 3.125rem;
     padding-block-start: 3.125rem
+  }
+}
+@media (max-width:61.99875em)and (max-width:20em) {
+  .sailing__content {
+    -webkit-padding-end: 1.25rem;
+    padding-inline-end: 1.25rem
   }
 }
 @media (max-width:47.99875em) {
@@ -1205,7 +1215,8 @@ body::after {
     padding-block: clamp(1.25rem ,.2034883721rem + 5.2325581395vw ,4.0625rem)
   }
   .sailing__content {
-    padding-inline: clamp(1.25rem ,.6686046512rem + 2.9069767442vw ,2.8125rem)
+    -webkit-padding-start: clamp(1.25rem ,.6686046512rem + 2.9069767442vw ,2.8125rem);
+    padding-inline-start: clamp(1.25rem ,.6686046512rem + 2.9069767442vw ,2.8125rem)
   }
   .pete-palooza__content {
     padding-block: clamp(1.25rem ,.5523255814rem + 3.488372093vw ,3.125rem)
@@ -1248,6 +1259,18 @@ body::after {
 @media (min-width:61.99875em)and (max-width:20em) {
   .outback-adventure__title {
     max-width: 15.625rem
+  }
+}
+@media (max-width:61.99875em)and (min-width:73.75em) {
+  .sailing__content {
+    -webkit-padding-end: 2.8125rem;
+    padding-inline-end: 2.8125rem
+  }
+}
+@media (max-width:61.99875em)and (min-width:20em)and (max-width:73.75em) {
+  .sailing__content {
+    -webkit-padding-end: clamp(1.25rem ,.6686046512rem + 2.9069767442vw ,2.8125rem);
+    padding-inline-end: clamp(1.25rem ,.6686046512rem + 2.9069767442vw ,2.8125rem)
   }
 }
 @media (any-hover:hover) {
